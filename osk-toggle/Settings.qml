@@ -25,9 +25,9 @@ ColumnLayout {
         label: pluginApi?.tr("settings.backend.label")
         description: pluginApi?.tr("settings.backend.desc")
         model: [
-            { key: "auto",         name: pluginApi?.tr("settings.backend.option.auto")         || "Auto" },
-            { key: "squeekboard",  name: pluginApi?.tr("settings.backend.option.squeekboard")  || "Squeekboard" },
-            { key: "wvkbd",        name: pluginApi?.tr("settings.backend.option.wvkbd")        || "wvkbd" }
+            { key: "auto",        name: pluginApi?.tr("settings.backend.option.auto") },
+            { key: "squeekboard", name: pluginApi?.tr("settings.backend.option.squeekboard") },
+            { key: "wvkbd",       name: pluginApi?.tr("settings.backend.option.wvkbd") }
         ]
         currentKey: root.editBackend
         onSelected: key => {
