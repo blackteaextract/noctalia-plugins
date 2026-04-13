@@ -41,9 +41,6 @@ Toggle state is controlled via `gsettings set org.gnome.desktop.a11y.application
 
 The plugin takes ownership of the wvkbd process: on load it kills any pre-existing instance and relaunches it with `--hidden`. Show/hide is then controlled by sending `SIGUSR1` / `SIGUSR2` directly to the owned process. When the plugin unloads, the process is stopped.
 
-## Translations
-
-Translations live in `i18n/<locale>.json`. All keys except `settings.backend.desc` are fully translated. To add or improve a translation, copy `i18n/en.json` as a starting point.
 
 ## License
 
